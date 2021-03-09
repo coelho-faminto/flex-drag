@@ -1,3 +1,14 @@
 .fdrag-container {
     display: flex;
 }
+
+.fdrag-swappable {
+    position: relative;
+}
+
+.fdrag-swappable > .fdrag-control {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: lightgray;
+}
