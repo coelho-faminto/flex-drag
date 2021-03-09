@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-drag</title>
+
+    <link rel="stylesheet" href="resources/css/flex-drag.css">
+    <link rel="stylesheet" href="resources/css/style.css">
+</head>
+<body>
+    The idea here is to make a drag/swappable flex container.
+
+    <div class="fdrag-container border m-1">
+        <div draggable="true" class="fdrag-swappable border m-1 p-1 hover-red" style="flex-grow: 1; flex-basis: 60%">
+            Container 1
+        </div>
+        <div class="fdrag-swappable border m-1 p-1 hover-red" style="flex-grow: 1; flex-basis: 20%">
+            Container 2
+        </div>
+        <div class="fdrag-swappable border m-1 p-1 hover-red" style="flex-grow: 1; flex-basis: 20%">
+            Container 3
+        </div>
+    </div>
+    <div class="fdrag-container border m-1">
+        <div class="fdrag-swappable border m-1 p-1 hover-red" style="flex-grow: 1">
+            Container 4
+        </div>
+        <div class="fdrag-swappable border m-1 p-1 hover-red" style="flex-grow: 1">
+            Container 5
+        </div>
+        <div class="fdrag-swappable border m-1 p-1 hover-red" style="flex-grow: 1">
+            Container 6
+        </div>
+    </div>
+</body>
+</html>

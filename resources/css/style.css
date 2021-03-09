@@ -1,0 +1,28 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html *,
+body * {
+    box-sizing: inherit;
+}
+
+.border {
+    border-width: 1px;
+    border-style: solid;
+}
+
+.m-1 {
+    margin: 1rem;
+}
+
+.p-1 {
+    padding: 1rem;
+}
+
+.hover-red:hover {
+    background-color: red;
+}
