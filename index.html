@@ -1,56 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flex-drag</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Flex-drag</title>
 
-    <link rel="stylesheet" href="resources/css/flex-drag.css">
-    <link rel="stylesheet" href="resources/css/style.css">
-</head>
-<body>
-    The idea here is to make a drag/swappable flex container.
+        <link rel="stylesheet" href="resources/css/flex-drag.css" />
+        <link rel="stylesheet" href="resources/css/style.css" />
 
-    <div class="fdrag-container border m-1">
-        <div draggable="true" class="fdrag-swappable border m-1 p-1 hover-red" style="flex-grow: 1; flex-basis: 60%">
-            <div class="fdrag-control">
-                Handler, settings, move, delete...
+        <script src="resources/js/flex-drag.js" type="module" defer></script>
+    </head>
+    <body>
+        The idea here is to make a drag/swappable flex container.
+
+        <div class="fdrag-container border m-1">
+            <div
+                class="fdrag-swappable border m-1 p-1 hover-red"
+                style="flex-grow: 1; flex-basis: 60%"
+            >
+                <div class="fdrag-control">
+                    <div>
+                        <div class="svg svg-cog"></div>
+                    </div>
+                    <div>
+                        <div draggable="true" class="svg svg-move"></div>
+                    </div>
+                </div>
+                Container 1
             </div>
-            Container 1
-        </div>
-        <div class="fdrag-swappable border m-1 p-1 hover-red" style="flex-grow: 1; flex-basis: 20%">
-            <div class="fdrag-control">
-                Handler, settings, move, delete...
+            <div
+                class="fdrag-swappable border m-1 p-1 hover-red"
+                style="flex-grow: 1; flex-basis: 20%"
+            >
+                <div class="fdrag-control">
+                    Handler, settings, move, delete...
+                </div>
+                Container 2
             </div>
-            Container 2
-        </div>
-        <div class="fdrag-swappable border m-1 p-1 hover-red" style="flex-grow: 1; flex-basis: 20%">
-            <div class="fdrag-control">
-                Handler, settings, move, delete...
+            <div
+                class="fdrag-swappable border m-1 p-1 hover-red"
+                style="flex-grow: 1; flex-basis: 20%"
+            >
+                <div class="fdrag-control">
+                    Handler, settings, move, delete...
+                </div>
+                Container 3
             </div>
-            Container 3
         </div>
-    </div>
-    <div class="fdrag-container border m-1">
-        <div class="fdrag-swappable border m-1 p-1 hover-red" style="flex-grow: 1">
-            <div class="fdrag-control">
-                Handler, settings, move, delete...
+        <div class="fdrag-container border m-1">
+            <div
+                class="fdrag-swappable border m-1 p-1 hover-red"
+                style="flex-grow: 1"
+            >
+                <div class="fdrag-control">
+                    Handler, settings, move, delete...
+                </div>
+                Container 4
             </div>
-            Container 4
-        </div>
-        <div class="fdrag-swappable border m-1 p-1 hover-red" style="flex-grow: 1">
-            <div class="fdrag-control">
-                Handler, settings, move, delete...
+            <div
+                class="fdrag-swappable border m-1 p-1 hover-red"
+                style="flex-grow: 1"
+            >
+                <div class="fdrag-control">
+                    Handler, settings, move, delete...
+                </div>
+                Container 5
             </div>
-            Container 5
-        </div>
-        <div class="fdrag-swappable border m-1 p-1 hover-red" style="flex-grow: 1">
-            <div class="fdrag-control">
-                Handler, settings, move, delete...
+            <div
+                class="fdrag-swappable border m-1 p-1 hover-red"
+                style="flex-grow: 1"
+            >
+                <div class="fdrag-control">
+                    Handler, settings, move, delete...
+                </div>
+                Container 6
             </div>
-            Container 6
         </div>
-    </div>
-</body>
+    </body>
 </html>

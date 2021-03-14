@@ -10,5 +10,48 @@
     position: absolute;
     top: 0;
     right: 0;
+    /* background-color: lightgray; */
+    line-height: 0;
+    overflow: hidden;
+    border-bottom-left-radius: 5px;
+}
+
+.fdrag-swappable > .fdrag-control > * {
+    display: inline-block;
+    margin: 2px;
+    padding: 4px;
     background-color: lightgray;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.fdrag-swappable > .fdrag-control > *:hover {
+    box-shadow: inset -6px -6px 9px 0px #00000024;
+}
+
+.fdrag-swappable > .fdrag-control > *:active {
+    transform: scale(0.96);
+    box-shadow: inset 6px 6px 9px 0px #00000024;
+}
+
+:root {
+    --svg-cog: url('./../images/svg/cog.svg');
+    --svg-move: url('./../images/svg/move.svg');
+}
+
+.svg {
+    background-color: black;
+    width: 20px;
+    height: 20px;
+}
+
+.svg-cog {
+    mask: var(--svg-cog) no-repeat center / contain;
+    -webkit-mask: var(--svg-cog) no-repeat center / contain;
+}
+
+.svg-move {
+    mask: var(--svg-move) no-repeat center / contain;
+    -webkit-mask: var(--svg-move) no-repeat center / contain;
+    cursor: move;
 }
