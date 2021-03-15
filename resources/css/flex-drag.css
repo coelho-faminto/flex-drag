@@ -1,42 +1,44 @@
-.fdrag-container {
+.fdrag-box {
     display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    min-height: 34px;
 }
 
-.fdrag-swappable {
-    position: relative;
-}
-
-.fdrag-swappable > .fdrag-control {
-    position: absolute;
-    top: 0;
-    right: 0;
-    /* background-color: lightgray; */
-    line-height: 0;
-    overflow: hidden;
+.fdrag-box > .fdrag-control {
+    display: none;
     border-bottom-left-radius: 5px;
 }
 
-.fdrag-swappable > .fdrag-control > * {
-    display: inline-block;
+.fdrag-edit-mode .fdrag-control {
+    display: flex;
+    flex: 1 0 100%;
+    justify-content: flex-end;
+    pointer-events: none;
+}
+
+.fdrag-box > .fdrag-control > * {
+    display: block;
     margin: 2px;
     padding: 4px;
     background-color: lightgray;
     cursor: pointer;
     border-radius: 5px;
+    pointer-events: initial;
 }
 
-.fdrag-swappable > .fdrag-control > *:hover {
+.fdrag-box > .fdrag-control > *:hover {
     box-shadow: inset -6px -6px 9px 0px #00000024;
 }
 
-.fdrag-swappable > .fdrag-control > *:active {
+.fdrag-box > .fdrag-control > *:active {
     transform: scale(0.96);
     box-shadow: inset 6px 6px 9px 0px #00000024;
 }
 
 :root {
-    --svg-cog: url('./../images/svg/cog.svg');
-    --svg-move: url('./../images/svg/move.svg');
+    --svg-cog: url("./../images/svg/cog.svg");
+    --svg-move: url("./../images/svg/move.svg");
 }
 
 .svg {

@@ -11,14 +11,20 @@
 
         <script src="resources/js/flex-drag.js" type="module" defer></script>
     </head>
-    <body>
+    <body class="fdrag-edit-mode">
         The idea here is to make a drag/swappable flex container.
 
-        <div class="fdrag-container border m-1">
-            <div
-                class="fdrag-swappable border m-1 p-1 hover-red"
-                style="flex-grow: 1; flex-basis: 60%"
-            >
+        <div class="fdrag-box border m-1">
+            <div class="fdrag-control">
+                <div>
+                    <div class="svg svg-cog"></div>
+                </div>
+                <div>
+                    <div draggable="true" class="svg svg-move"></div>
+                </div>
+            </div>
+
+            <div class="fdrag-box border m-1" data-drag-id="1">
                 <div class="fdrag-control">
                     <div>
                         <div class="svg svg-cog"></div>
@@ -27,54 +33,58 @@
                         <div draggable="true" class="svg svg-move"></div>
                     </div>
                 </div>
-                Container 1
-            </div>
-            <div
-                class="fdrag-swappable border m-1 p-1 hover-red"
-                style="flex-grow: 1; flex-basis: 20%"
-            >
-                <div class="fdrag-control">
-                    Handler, settings, move, delete...
-                </div>
-                Container 2
-            </div>
-            <div
-                class="fdrag-swappable border m-1 p-1 hover-red"
-                style="flex-grow: 1; flex-basis: 20%"
-            >
-                <div class="fdrag-control">
-                    Handler, settings, move, delete...
-                </div>
-                Container 3
+
+                <div class="m-1 border p-1">fdrag-box child DRAGGABLE 1</div>
             </div>
         </div>
-        <div class="fdrag-container border m-1">
-            <div
-                class="fdrag-swappable border m-1 p-1 hover-red"
-                style="flex-grow: 1"
-            >
-                <div class="fdrag-control">
-                    Handler, settings, move, delete...
+
+        <div class="fdrag-box border m-1">
+            <div class="fdrag-control">
+                <div>
+                    <div class="svg svg-cog"></div>
                 </div>
-                Container 4
+                <div>
+                    <div draggable="true" class="svg svg-move"></div>
+                </div>
             </div>
-            <div
-                class="fdrag-swappable border m-1 p-1 hover-red"
-                style="flex-grow: 1"
-            >
+
+            <div class="fdrag-box border m-1">
                 <div class="fdrag-control">
-                    Handler, settings, move, delete...
+                    <div>
+                        <div class="svg svg-cog"></div>
+                    </div>
+                    <div>
+                        <div draggable="true" class="svg svg-move"></div>
+                    </div>
                 </div>
-                Container 5
+
+                <div class="m-1 border p-1">fdrag-box child 1</div>
             </div>
-            <div
-                class="fdrag-swappable border m-1 p-1 hover-red"
-                style="flex-grow: 1"
-            >
+
+            <div class="fdrag-box border m-1">
                 <div class="fdrag-control">
-                    Handler, settings, move, delete...
+                    <div>
+                        <div class="svg svg-cog"></div>
+                    </div>
+                    <div>
+                        <div draggable="true" class="svg svg-move"></div>
+                    </div>
                 </div>
-                Container 6
+
+                <div class="m-1 border p-1">fdrag-box child 1</div>
+            </div>
+
+            <div class="fdrag-box border m-1">
+                <div class="fdrag-control">
+                    <div>
+                        <div class="svg svg-cog"></div>
+                    </div>
+                    <div>
+                        <div draggable="true" class="svg svg-move"></div>
+                    </div>
+                </div>
+
+                <div class="m-1 border p-1">fdrag-box child 1</div>
             </div>
         </div>
     </body>
